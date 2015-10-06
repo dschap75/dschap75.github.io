@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+
+  margin: 0px;
+  width: 200px;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+}
+
+.container {
+  background-color: #b2b2b2;
+  height: 900px;
+  position: relative;
+  margin-left: 200px;
+}
+
+/*#frontpage {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  float: left;
+}*/
+
+header {
+  position: fixed;
+  max-width: 200px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  min-height: 600px;
+}
+
+ul {
+  text-align: center;
+  line-height: 60px;
+  padding: 0;
+  list-style-type: none;
+}
+
+li a {
+/*  font-family: "Forza SSm A", "Forza SSm B";
+  font-style: normal;
+  font-weight: 400;*/
+  font-size: 12px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  color: #70BEA9;
+  text-decoration: none;
+}
+
+em {
+/*  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;*/
+}
+
+h1 { 
+  font-family: "Tungsten Rounded A", "Tungsten Rounded B";
+  font-style: normal;
+  font-weight: 700;
+/*  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;*/
+  position: absolute;
+  color: white;
+  font-size: 75px;
+  line-height: 75px;
+  left: 50px;
+  top: 50px;
+  opacity: 0.8;
+}
+
+h2 {
+  margin-top: 40px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
+}
+
+.Menu1 {
+
+}
+
+.social {
+  text-align: center;
+  bottom: 15px;
+  position: absolute;
+  font-size: 25px;
+  left: 0;
+  right: 0;
+/*  margin-left: 75px;*/
+}
+
+.social a {
+  font-size: 17px;
+  padding-right: 10px;
+}
+
+
+.social a:last-child {
+  padding-right: 0px;
+
+}
+
+#copyright {
+  color: #b2b2b2;
+  font-size: 10px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+
+}
+
+
+.family {
+  height: 200px;
+}
+
+i {
+  color: #70BEA9;
+}
