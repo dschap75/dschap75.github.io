@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+#clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 img {
     width: 100%;
 }
@@ -13,12 +19,12 @@ img {
 }
 
 body {
+  background-color: #ebebeb;
   margin: 0 auto;
   min-width: 1000px;
 }
 
 .container {
-  background-color: #b2b2b2;
   height: 900px;
   position: relative;
   margin-left: 200px;
@@ -40,6 +46,7 @@ header {
   top: 0;
   height: 100%;
   min-height: 600px;
+  background-color: white;
 }
 
 ul {
@@ -50,12 +57,10 @@ ul {
 }
 
 li a {
-/*  font-family: "Forza SSm A", "Forza SSm B";
+  font-family: "Forza SSm A", "Forza SSm B";
   font-style: normal;
-  font-weight: 400;*/
-  font-size: 12px;
-  font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
+  font-size: 12px;
   color: #70BEA9;
   text-decoration: none;
 }
@@ -66,24 +71,51 @@ em {
 }
 
 h1 { 
-  font-family: "Tungsten Rounded A", "Tungsten Rounded B";
+  font-family: "Tungsten A", "Tungsten B";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
+  color: white;
+  font-size: 150px;
+  line-height: 1em;
+/*  opacity: 0.8;*/
+}
+
+h2 {
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+/*  opacity: 0.7;*/
+  line-height: 1em;
+}
+
+p {
+/*  background-color: #dddddd;*/
+  font-family: "Forza SSm A", "Forza SSm B";
+  font-style: normal;
+/*  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;*/
+  font-size: 14px;
+  line-height: 2em;
+  
+}
+
+.hero {
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 800;
+/*  font-family: "Tungsten Rounded A", "Tungsten Rounded B";
+  font-style: normal;
+  font-weight: 700;*/
 /*  font-family: 'Titillium Web', sans-serif;
   font-weight: 900;*/
   position: absolute;
   color: white;
-  font-size: 75px;
-  line-height: 75px;
+  font-size: 90px;
+  line-height: 1em;
   left: 50px;
   top: 50px;
   opacity: 0.8;
-}
-
-h2 {
-  margin-top: 40px;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 900;
 }
 
 .Menu1 {
@@ -99,6 +131,21 @@ h2 {
   right: 0;
 /*  margin-left: 75px;*/
 }
+
+#dude {
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  font-size: 90px;
+  line-height: .5em;
+  left: 50px;
+  top: 50px;
+/*  opacity: 0.8;*/
+
+}
+
+
 
 .social a {
   font-size: 17px;
@@ -116,12 +163,97 @@ h2 {
   font-size: 10px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
+}
 
+/*.projCol1 {
+
+    position: relative;
+
+    float-left: 50%;
+
+}
+.projCol2 {
+
+    position: relative;
+
+    float-left: 50%;
+
+}*/
+
+#craftsman1 {
+  display: inline-block;
+/*  padding-top: 150px;
+  padding-left: 10px;*/
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+
+#craftsman2 {
+  display: inline-block;
+/*  padding-top: 150px;
+  padding-left: 10px;*/
+  width: 50%;
+  padding: 0;
+  float: left;
+}
+
+#craftsman3 {
+  display: inline-block;
+/*  padding-top: 150px;
+  padding-left: 10px;*/
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  clear: both;
+}
+
+#craftsman4 {
+  display: inline-block;
+/*  padding-top: 150px;
+  padding-left: 10px;*/
+  width: 50%;
+  padding: 0;
+  float: left;
 }
 
 
-.family {
-  height: 200px;
+
+.about {
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 800;
+  position: absolute;
+  color: #70BEA9;
+  margin: 95px 0px 30px 100px;
+/*  padding-left: 50px;*/
+}
+
+.aboutMe {
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 800;
+  position: absolute;
+  color: #70BEA9;
+  margin: 228px 100px 30px 100px;
+  font-size: 42px;
+/*  padding-left: 50px;*/
+}
+
+.aboutContent {
+    padding: 20px 100px 60px 100px;
+}
+
+#family {
+  margin-top: 80px;
+  margin-left: 50px;
+  width: 90%;
+  border: 3px solid white;
+/*  opacity: 0.3;*/
+
+
+  
 }
 
 i {
