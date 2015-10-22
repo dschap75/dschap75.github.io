@@ -2,150 +2,93 @@
   box-sizing: border-box;
 }
 
-#clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-img {
+
+  h1 { 
+    font-family: "Tungsten A", "Tungsten B";
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    line-height: 1em;
+  }
+
+  h2 {
+    font-family: "Tungsten A", "Tungsten B";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1em;
+  }
+
+  p {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    line-height: 2em;
+  }
+
+/*  img {
     width: 100%;
-}
+  }*/
 
-.logo {
 
-  margin: 0px;
-  width: 200px;
-}
+/*// SIDEBAR nav // */
 
-body {
-  background-color: #ebebeb;
-  margin: 0 auto;
-  min-width: 1000px;
-}
 
-.container {
-  height: 900px;
-  position: relative;
-  margin-left: 200px;
-}
 
-/*#frontpage {
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  float: left;
-}*/
+  .hamburger {
+    margin-top: 10px;
+    display: none;
+    cursor: pointer;
+  }
 
-header {
-  position: fixed;
-  max-width: 200px;
-  left: 0;
-  top: 0;
-  height: 100%;
-  min-height: 600px;
-  background-color: white;
-}
+  #logo img {
+    margin-left: 77px;
+    width: 175px;
+  }
 
-ul {
-  text-align: center;
-  line-height: 60px;
-  padding: 0;
-  list-style-type: none;
-}
 
-li a {
-  font-family: "Forza SSm A", "Forza SSm B";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  color: #70BEA9;
-  text-decoration: none;
-}
+  #sidebar-holder {
+    min-height: 600px;
+    height: 100%;
+    position: fixed;
+    float: left;
+    width: 300px;
+  }
 
-em {
-/*  font-family: 'Titillium Web', sans-serif;
-  font-weight: 700;*/
-}
+  #sidebar {
+    display: block;
+    position: fixed;
+    width: 300px;
+    padding: 70px 0 0;
+    min-height: 100%;
+    background: #fff;
+    text-align: center;
+    /*  color: ;*/
+  }
 
-h1 { 
-  font-family: "Tungsten A", "Tungsten B";
-  font-style: normal;
-  font-weight: 800;
-  color: white;
-  font-size: 150px;
-  line-height: 1em;
-/*  opacity: 0.8;*/
-}
+  #sidebar {
+    position: fixed;
+    max-width: 300px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    min-height: 600px;
+    background-color: white;
+  }
 
-h2 {
-  font-family: "Tungsten A", "Tungsten B";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 50px;
-/*  opacity: 0.7;*/
-  line-height: 1em;
-}
-
-p {
-/*  background-color: #dddddd;*/
-  font-family: "Forza SSm A", "Forza SSm B";
-  font-style: normal;
-/*  font-family: 'Titillium Web', sans-serif;
-  font-weight: 400;*/
-  font-size: 14px;
-  line-height: 2em;
-  
-}
-
-.hero {
-  font-family: "Tungsten A", "Tungsten B";
-  font-style: normal;
-  font-weight: 800;
-/*  font-family: "Tungsten Rounded A", "Tungsten Rounded B";
-  font-style: normal;
-  font-weight: 700;*/
-/*  font-family: 'Titillium Web', sans-serif;
-  font-weight: 900;*/
-  position: absolute;
-  color: white;
-  font-size: 90px;
-  line-height: 1em;
-  left: 50px;
-  top: 50px;
-  opacity: 0.8;
-}
-
-.Menu1 {
-
-}
-
-.social {
+  .social {
   text-align: center;
   bottom: 15px;
   position: absolute;
   font-size: 25px;
   left: 0;
   right: 0;
-/*  margin-left: 75px;*/
 }
-
-#dude {
-  font-family: "Tungsten A", "Tungsten B";
-  font-style: normal;
-  font-weight: 500;
-  color: white;
-  font-size: 90px;
-  line-height: .5em;
-  left: 50px;
-  top: 50px;
-/*  opacity: 0.8;*/
-
-}
-
-
 
 .social a {
   font-size: 17px;
@@ -155,107 +98,756 @@ p {
 
 .social a:last-child {
   padding-right: 0px;
-
 }
 
 #copyright {
   color: #b2b2b2;
   font-size: 10px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Forza SSm A", "Forza SSm B";
+  font-style: normal;
   font-weight: 400;
-}
-
-/*.projCol1 {
-
-    position: relative;
-
-    float-left: 50%;
-
-}
-.projCol2 {
-
-    position: relative;
-
-    float-left: 50%;
-
-}*/
-
-#craftsman1 {
-  display: inline-block;
-/*  padding-top: 150px;
-  padding-left: 10px;*/
-  padding: 0;
-  width: 50%;
-  float: left;
-}
-
-#craftsman2 {
-  display: inline-block;
-/*  padding-top: 150px;
-  padding-left: 10px;*/
-  width: 50%;
-  padding: 0;
-  float: left;
-}
-
-#craftsman3 {
-  display: inline-block;
-/*  padding-top: 150px;
-  padding-left: 10px;*/
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  float: left;
-  clear: both;
-}
-
-#craftsman4 {
-  display: inline-block;
-/*  padding-top: 150px;
-  padding-left: 10px;*/
-  width: 50%;
-  padding: 0;
-  float: left;
-}
-
-
-
-.about {
-  font-family: "Tungsten A", "Tungsten B";
-  font-style: normal;
-  font-weight: 800;
-  position: absolute;
-  color: #70BEA9;
-  margin: 95px 0px 30px 100px;
-/*  padding-left: 50px;*/
-}
-
-.aboutMe {
-  font-family: "Tungsten A", "Tungsten B";
-  font-style: normal;
-  font-weight: 800;
-  position: absolute;
-  color: #70BEA9;
-  margin: 228px 100px 30px 100px;
-  font-size: 42px;
-/*  padding-left: 50px;*/
-}
-
-.aboutContent {
-    padding: 20px 100px 60px 100px;
-}
-
-#family {
-  margin-top: 80px;
-  margin-left: 50px;
-  width: 90%;
-  border: 3px solid white;
-/*  opacity: 0.3;*/
-
-
-  
 }
 
 i {
   color: #70BEA9;
 }
+
+li a:hover {
+  color: #565656;
+  font-weight: 700;
+}
+
+  ul {
+    margin-top: 54px;
+    text-align: center;
+    line-height: 2em;
+    padding: 0;
+    list-style-type: none;
+  }
+
+
+  li a {
+    font-family: "Forza SSm A", "Forza SSm B";
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #70BEA9;
+    text-decoration: none;
+    margin-bottom: 24px;
+  }
+/*  // end sidebar // */
+
+
+/*// HORIZONTAL menu //*/
+.horz-menu-holder {
+
+  display: none;
+}
+/*// horz menu end //*/
+
+
+/*//// CONTENT ////*/
+
+  #content-holder {
+    display: inline-block;
+/*    float: left;*/
+    margin-left: 300px;
+  }
+
+
+  #content {
+    display: block;
+    position: fixed;
+  }
+
+
+/*// HERO //*/
+
+#heroContainer {
+
+height: 900px;
+width: 100%;
+
+}
+
+#frontpage {
+  width: 100%;
+}
+
+ .hero {
+  text-transform: uppercase;
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  position: absolute;
+  color: white;
+  line-height: 1em;
+  padding-left: 47px;
+  top: 50px;
+  opacity: 0.8;
+}
+
+#dude {
+  text-transform: uppercase;
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  font-size: 70px;
+  line-height: .5em;
+  left: 50px;
+  top: 50px;
+}
+
+/*// end hero //*/
+
+/*// ABOUT //*/
+
+.about {
+  background-color: #A9cfc0;
+}
+
+#familyContainer {
+  max-height: 1028px;
+/*  width: 100%;*/
+}
+
+#family {
+
+/*height: 200px;*/
+width: 100%;
+}
+
+
+.aboutMe {
+  display: inline-block;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  color: white;
+  margin: -70px 0px 10px 59px;;
+}
+
+/*.aboutMeSub {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Forza SSm A", "Forza SSm B";
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  color: white;
+  margin: 0px 0px 0px 10px;
+}*/
+
+.about p {
+  font-family: 'Slabo 27px', serif;
+  color: white;
+  font-size: 18px;
+  padding: 40px 40px 80px 60px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+
+/*// end about //*/
+
+
+/*// Portfolio //*/
+
+.portContainer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.titles {
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #565656;
+}
+
+/*// port categories //*/
+#UXandWeb {
+  background: #4e4e4e;
+  text-align:center;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  display: inline-block;
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+
+#UXandWebTitle{
+  background-color: #e3e2e0;
+  clear: both;
+  display: inline-block;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  width: 50%;
+  float: left;
+  transition: background-color .3s ease-in-out;
+}
+
+#GraphicD {
+  width: 50%;
+  padding: 0;
+}
+
+#GraphicDTitle {
+  margin: -4px 0px 0px 0px;
+  background-color: #f6f6f6;
+  width: 50%;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  float: left;
+  transition: background-color .3s ease-in-out;
+}
+
+#Illustr {
+  background: #4e4e4e;
+  text-align:center;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  display: inline-block;
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+
+#IllustrTitle {
+  background-color: #ffffff;
+  clear: both;
+  display: inline-block;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  width: 50%;
+  float: left;
+  transition: background-color .3s ease-in-out;
+}
+
+#PhotoG {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+}
+
+#PhotoGTitle {  
+  margin: -4px 0px 0px 0px;
+  background-color: #f6f6f6;
+  display: inline-block;
+  width: 50%;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  float: left;
+  transition: background-color .3s ease-in-out;
+}
+
+/*// end port cats //*/
+
+/*// port projects //*/
+
+#craftsmanHp {
+  background: #4e4e4e;
+  text-align:center;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  display: inline-block;
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+
+#craftsmanHpT {
+  background-color: #e3e2e0;
+  clear: both;
+  display: inline-block;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  width: 50%;
+  float: left;
+  transition: background-color .3s ease-in-out;
+}
+
+#samsungExp {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+
+}
+
+#samsungExpT {
+  background-color: #f6f6f6;
+  display: inline-block;
+  width: 50%;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  float: left;
+  transition: background-color .3s ease-in-out;
+}
+
+#samsungGexp {
+  background: #4e4e4e;
+  text-align:center;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  display: inline-block;
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+
+#samsungGexpT {
+  background-color: #f6f6f6;
+  clear: both;
+  display: inline-block;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  width: 50%;
+  float: left;
+  transition: background-color .3s ease-in-out;
+}
+
+#maytagShow {
+  display: inline-block;
+  width: 50%;
+  padding: 0;
+}
+
+#maytagShowT {
+  background-color: #e3e2e0;
+  display: inline-block;
+  width: 50%;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  float: left;
+  transition: background-color .3s ease-in-out;
+}
+
+/*// end port projects & cats //*/
+
+    /*// hover effects //*/
+#hov {
+  transition: all .3s ease-in-out;
+}
+
+
+#hov:hover img {
+ opacity: .5;
+}
+
+#hov:hover #UXandWeb {
+ background-color: rgba(126, 122, 122, 0.8);
+}
+
+#hov:hover #UXandWebTitle {
+ background-color: rgba(126, 122, 122, 0.8);
+ color: white;
+}
+
+#hov:hover #GraphicD {
+ background-color: rgba(126, 122, 122, 0.8);
+}
+
+#hov:hover #GraphicDTitle {
+ background-color: rgba(126, 122, 122, 0.8);
+ color: white;
+}
+
+#hov:hover #Illustr  {
+ background-color: rgba(126, 122, 122, 0.8);
+}
+
+#hov:hover #IllustrTitle {
+ background-color: rgba(126, 122, 122, 0.8);
+ color: white;
+}
+
+#hov:hover #PhotoG  {
+ background-color: rgba(126, 122, 122, 0.8);
+}
+
+#hov:hover #PhotoGTitle {
+ background-color: rgba(126, 122, 122, 0.8);
+ color: white;
+}
+
+#hov:hover #craftsmanHp {
+ background-color: rgba(126, 122, 122, 0.8);
+}
+
+#hov:hover #craftsmanHpT {
+ background-color: rgba(126, 122, 122, 0.8);
+ color: white;
+}
+
+#hov:hover #samsungExp {
+ background-color: rgba(126, 122, 122, 0.8);
+}
+
+#hov:hover #samsungExpT {
+ background-color: rgba(126, 122, 122, 0.8);
+ color: white;
+}
+
+#hov:hover #samsungGexp {
+ background-color: rgba(126, 122, 122, 0.8);
+}
+
+#hov:hover #samsungGexpT {
+ background-color: rgba(126, 122, 122, 0.8);
+ color: white;
+}
+
+#hov:hover #maytagShow {
+ background-color: rgba(126, 122, 122, 0.8);
+}
+
+#hov:hover #maytagShowT {
+ background-color: rgba(126, 122, 122, 0.8);
+ color: white;
+}
+
+#hov:hover {
+  background-color: rgba(126, 122, 122, 0.8);
+  color: #ffffff;
+}
+
+
+#hov:hover .titles {
+  color: #ffff;
+}
+
+/*// end Projects//*/
+
+
+
+
+
+
+
+
+.horz-menu {
+  display: none;
+}
+
+#logo2 {
+ display: none;
+}
+
+/*//Responsive//*/
+
+@media only screen and (max-width: 900px) {
+
+.hamburger {
+  display: block;
+  font-size: 24px;
+  color: #79C2AE;
+  text-align: center;
+}
+
+ul {
+  display: none;
+}
+
+
+  li a:hover {
+    font-family: "Forza SSm A", "Forza SSm B";
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #49483e;
+    text-decoration: none;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+
+.horz-menu-holder {
+  width: 100%;
+  background: #fff;
+  color: #161e27;
+  text-align: center;
+  height: 40px;
+  display: block;
+}
+
+#sidebar-holder {
+  display: none;
+}
+
+
+#sidebar {
+  display: none;
+}
+
+
+  #dude {
+    font-size: 50px;
+  }
+
+  #family {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about {
+    padding: 0px 0px 50px 0px;
+  }
+
+  .aboutMe {
+    font-size: 3rem;
+    margin: -63px 0px 0px 52px;
+  }
+
+
+  .about p {
+    padding: 30px 60px 80px 54px;
+  }
+
+#heroContainer {
+
+  max-height: 800px;
+  width: 100%;
+}
+
+#frontpage {
+  overflow: hidden;
+  width: 100%;
+}
+
+#content-holder {
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.hero {
+  width: 75%;
+  padding-left: 0;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1em;
+  top: 350px;
+  margin-left: 100px;
+
+}
+
+#logo2  img:last-child {
+  width: 200px;
+}
+
+#logo2 {
+  margin-left: 39%;
+  margin-top: 100px;
+  display: block;
+  position: absolute;
+}
+
+/*// hamburger open js //*/
+
+.open {
+
+  height: 200px;
+  width: 100%;
+}
+
+.open-menu {
+  display: block;
+   -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  margin-top: 20px;
+}
+
+.open-hero {
+  top: 500px;
+}
+
+/*// end //*/
+
+#logo {
+  display: none;
+}
+
+.social {
+  display: none;
+}
+
+#familyContainer {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.hero br {
+  display: none;
+}
+
+#dude {
+  margin-top: 1rem;
+}
+
+
+
+}
+
+/*@media only screen and (max-width: 480px) {
+
+
+
+
+  .container {
+    margin: 0;
+  }
+
+  body {
+    min-width: 480px;
+  }
+
+
+  #dude {
+    font-size: 50px;
+  }
+
+  #family {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about {
+    padding: 0px 0px 4px 0px;
+  }
+
+  .aboutMe {
+    font-size: 2.1rem;
+    margin: 20px 0px 0px 52px;
+  }
+
+  .aboutContent {
+
+  }
+
+
+  .about p {
+    font-size: 1rem;
+    padding: 10px 60px 40px 54px;
+  }
+*/
+
+/* .hamburger {
+    position: absolute;
+    display: inline-block;
+    top: 15px;
+    font-size: 24px;
+    color: #79C2AE;
+    text-align: center;*/
+/*
+
+
+  
+#heroContainer {
+  width: 100%;
+
+  overflow: hidden;
+
+}
+
+
+
+
+
+#sidebar {
+  display: none;
+}
+
+#content-holder {
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
+#content {
+  width: 100%;
+  display: block;
+}
+
+.hero {
+  width: 75%;
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Tungsten A", "Tungsten B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  line-height: 1em;
+  top: 274px;
+  left: 0 auto;
+
+}
+
+#menu {
+ width: 100%;
+}
+
+
+
+
+.open {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  float: left;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+#familyContainer {
+  width: 100%;
+  max-height: 213px;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero br {
+  display: none;
+}
+
+#dude {
+  margin-top: 10px;
+}
+
+   .top-menu {
+     margin-top: 59px;
+   }
+
+
+}*/
